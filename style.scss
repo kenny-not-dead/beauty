@@ -1,0 +1,613 @@
+$grey: #E5E5E5;
+
+$textColorDark: #333333;
+
+$accent: #66C05D;
+
+div,
+p,
+input,
+button,
+form,
+span,
+a,
+ul,
+li {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+
+li {
+    list-style-type: none; 
+}
+
+a {
+    text-decoration: none;
+    display: inline;
+    color: $textColorDark
+}
+
+.container{
+    width: 1110px;
+    margin: 0px auto;
+}
+
+.header{
+    border-bottom: 1px solid $grey;
+}
+
+
+.navWrapper{
+    background: $grey;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 16px 0;
+}
+
+.nav-a{
+    padding: 0 15px
+}
+
+.logoWrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo-img{
+    vertical-align: middle;
+}
+
+.logo-p{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    color: $accent;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+
+.contactWrapper{
+    margin: auto 0;
+    a {
+        font-size: 16px;
+    }
+}
+
+.contact-btn{
+    background: #FFFFFF;
+    margin-left: 40px;
+    border: 2px solid #66C05D;
+    @extend %btn-border
+}
+
+.nav-a--size{
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.offer{
+    margin: auto 0;
+    width: 320px;
+    padding: 184px 0;
+}
+
+h1, .offer-p{
+    color: #fff;
+}
+
+h1{
+    font-size: 48px;
+    margin: 0;
+    width: 360px;
+}
+
+.offer-p{
+    padding: 50px 0;
+}
+
+.offerWrapper-bg{
+    background-color: $accent;
+}
+
+.offerWrapper{
+    display: flex;
+
+}
+
+.offer-btn{
+    @extend %btn-border;
+    background-color: $accent;
+    color: white;
+    border: 2px solid #ffffff;
+    width: 170px;
+}
+
+
+.offer-imgellips{
+    background: url(img/Ellipse\ \(1\).svg) no-repeat;
+    width: 60%;
+    position: absolute;
+    margin-left: 335px;
+}
+
+
+.offer-imgmain{
+    padding-top: 20px;
+}
+
+
+.offer-imgellips--second{
+    background: url(img/Ellipse.svg) no-repeat;
+    margin-left: 90px;
+}
+
+
+%btn-border{
+    border-radius: 40px;
+    padding: 12px 26px;
+    cursor: pointer;
+}
+
+.test{
+    z-index: 999999;
+}
+
+.catalog{
+    background-color: #EFEFEF;
+    padding-bottom: 100px;
+}
+
+.catalog-h2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    background-color: #FFFFFF;
+    width: 255px;
+    padding: 25px 0;
+}
+
+.card-img{
+    padding: 0 65px;
+}
+
+.card-btn{
+    @extend %btn-border;
+    background-color: $accent;
+    color: #fff;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    width: 130px;
+
+}
+
+.card-p{
+    line-height: 20px;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0 30px;
+}
+
+.card-price{
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    padding: 20px 0;
+}
+
+.hot{
+   display: flex;
+   justify-content: space-between;
+}
+
+.hot-card{
+    display: flex;
+    background-color: $accent;
+    padding: 35px 40px;
+    color: #FFFFFF;
+    width: 540px;
+}
+
+.hot-info{
+    width: 250px;
+}
+
+h3{
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    width: 300px;
+}
+
+.hot-info-p{
+    padding: 25px 0;
+}
+
+.hot-img{
+    margin-left: 65px;
+}
+
+input{
+    border-radius: 30px;
+    border: none;
+    padding: 10px 25px;
+    color:  #C4C4C4;
+    width: 225px;
+}
+
+.offer-btn-size{
+    height: 35px;
+    padding: inherit;
+}
+
+.feedbackWrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.networks{
+    display: flex;
+}
+
+.network{
+    cursor: pointer;
+    border: 2px solid $accent;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-right: 20px;
+    img{
+        margin: auto;
+    }   
+}
+
+.adress{
+    margin: auto;
+}
+
+.law{
+    color: #828282;
+    background-color: #EFEFEF;
+}
+
+.lawWrapper{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media screen and (max-width: 1435px) {
+    .offer-imgellips{
+        width: 63%;
+    }
+}
+
+@media screen and (max-width: 1363px) {
+    .offer-imgellips{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 1363px) {
+    .offer-imgellips{
+        width: 59.7%;
+        background-size: contain;
+    }
+
+    .offer-imgellips--second {
+        background-size: contain;
+        width: 79%;
+    }
+
+    .offer-imgmain {
+        padding-top: 0px;
+    }
+
+    .offer-p {
+        padding: 22px 0;
+    }
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .offer-imgmain {
+        width: 465px;
+    }
+
+    .offer {
+        padding: 144px 0;
+    }
+
+    .offer-imgellips--second {
+        margin-left: 75px;
+    }
+
+    .offer {
+        margin-left: 50px;
+    }
+
+    .offer-imgellips {
+        margin-left: 390px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;   
+    }
+
+    .offer {
+        margin-left: 20px;
+    }
+
+    .offer-imgellips {
+        margin-left: 360px;
+    }
+
+    .card {
+        width: 220px;
+    }
+
+    .card-img {
+        padding: 0 45px;
+    }
+    
+    .card-p {
+        margin: 0 10px;
+    }
+
+    .hot-card {
+        width: 455px;
+        padding: 35px 25px;
+    }
+
+    .hot-img {
+        margin-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1110px) {
+    .offer {
+        margin-left: 10px;
+    }
+    
+    .offer-imgellips--second {
+        width: 79%;
+    }
+
+    .offer-imgellips {
+        width: 55%;
+        background-size: contain;
+    }
+
+    .offer-imgmain {
+        width: 440px;
+    }
+
+    .offer {
+        padding: 125px 0;
+    }
+
+     .law-p1  {
+        width: 380px;
+    }
+}
+
+
+@media screen and (max-width: 1020px) {
+    .container {
+        width: 720px;
+    }
+
+    .contact-btn {
+        margin-left: 20px;
+    }
+
+    .offer-imgellips {
+        width: 46%;
+        background-size: contain;
+    }
+
+
+    .offer-imgmain {
+        width: 315px;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
+
+    .offerWrapper {
+        display: block;
+        height: 750px;
+    }
+
+    .offer {
+        margin: 0 auto;
+        padding: 70px 0 50px;
+    }
+
+    .offer-p {
+        text-align: center;
+    }
+
+
+    .offer-btn {
+        margin: 0 auto;
+        display: block;
+    }
+    
+    
+    .cards{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .card {
+        width: 220px;
+        margin: 15px;
+    }
+
+    .hot {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hot-card {
+        margin: 10px 0;
+        width: 90%;
+    }
+
+    .hot-img {
+        margin-left: 25%;
+    }
+
+    .hot-info {
+        margin-left: 5%;
+    }
+
+    .feedbackWrapper {
+        display: block;
+    }
+
+    .networks {
+        justify-content: center;
+    }
+
+    .adress {
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .contactWrapper {
+        margin: auto;
+        text-align: center;
+    }
+
+    .offer-imgellips {
+        background: #ffffff7d;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        margin: 0 15%;
+    
+    }
+
+    .offer-imgellips--second {
+        margin-top: 25px;
+        margin-left: 25px;
+        height: 350px;
+        background: #ffffff75;
+        width: 350px;
+        border-radius: 50%;
+    }
+}
+
+
+
+@media screen and (max-width: 810px) {
+    .offer-imgellips {
+        margin: 10px 70px;
+    }
+
+    .container {
+        width: 540px;
+    }
+
+    .logoWrapper {
+        flex-wrap: wrap;
+    }
+
+    .logoWrapper-logo{
+        margin: 20px auto;
+    }
+
+    .hot-img {
+        margin-left: 5%;
+    }
+
+    .lawWrapper {
+        display: block;
+        text-align: center;
+    }
+
+    .law-p1 {
+        width: 380px;
+        margin: 15px auto;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .container{
+        width: 360px;
+    }
+
+    .nav{
+        flex-wrap: wrap;
+    }
+
+    .offer-imgellips {
+        margin: 10px 0px;
+    }
+
+    .hot-card {
+        width: 100%;
+    }
+ 
+    .hot-img {
+        display: none;
+    }
+
+
+    .nav li{
+        margin: 5px;
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    .offer-imgellips {
+        display: none;
+    }
+
+    .offerWrapper {
+        height: auto;
+    }
+}
